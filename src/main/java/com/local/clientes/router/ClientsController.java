@@ -47,6 +47,7 @@ public class ClientsController {
     public List<ClientePlusDto> listarClientesConMetrica() {
         return clienteService.obtenerClientesConMetrica();
     }
+
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
         authenticationManager.authenticate(
